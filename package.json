@@ -1,0 +1,27 @@
+{
+  "name": "next-with-apollo",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.16",
+    "@types/react": "^17.0.33",
+    "graphql": "^16.0.1",
+    "next": "12.0.2",
+    "next-http-proxy-middleware": "^1.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "eslint": "7",
+    "eslint-config-next": "12.0.2",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  }
+}
