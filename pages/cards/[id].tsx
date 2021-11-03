@@ -25,6 +25,7 @@ export default function Cards() {
 					rel="stylesheet"
 				/>
 				<title>Sorare - Discover your cards</title>
+				<meta name="description" content="Discover the awesome cards you receive" />
 			</Head>
 			<div className="whitespace-nowrap my-auto overflow-auto w-full max-w-full text-center py-20">
 				{cards.map((id) => (
