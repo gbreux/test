@@ -36,12 +36,13 @@ export default function Card({ slug }) {
 		>
 			<div className={`card ${player && !loading ? "card--active" : ""}`}>
 				<div className="card-inner" style={{ height: 831 / 2, width: 514 / 2 }}>
-					<div
+					<button
 						className="card-front flex items-center justify-center relative bg-gray-900 h-full w-full cursor-pointer rounded-xl transition-shadow shadow-sm hover:shadow-2xl"
 						onClick={() => reveal(slug)}
+						tabIndex={player && !loading ? -1 : 0}
 					>
 						<Loader className="w-16 text-white" loading={loading} />
-					</div>
+					</button>
 					<div className="card-back h-full w-full rounded-xl overflow-hidden transition-shadow shadow-sm hover:shadow-2xl">
 						<PlayerCard player={player} />
 					</div>
