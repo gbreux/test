@@ -42,6 +42,7 @@ export default function Card({ slug }) {
 						tabIndex={player && !loading ? -1 : 0}
 					>
 						<Loader className="w-16 text-white" loading={loading} />
+            <span className="sr-only">Discover this card</span>
 					</button>
 					<div className="card-back h-full w-full rounded-xl overflow-hidden transition-shadow shadow-sm hover:shadow-2xl">
 						<PlayerCard player={player} />
