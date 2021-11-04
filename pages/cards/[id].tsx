@@ -25,15 +25,18 @@ export default function Cards() {
 					rel="stylesheet"
 				/>
 				<title>Sorare - Discover your cards</title>
-				<meta name="description" content="Discover the awesome cards you receive" />
+				<meta
+					name="description"
+					content="Discover the awesome cards you receive"
+				/>
 			</Head>
-			<div className="whitespace-nowrap my-auto overflow-auto w-full max-w-full text-center py-20">
+			<main className="whitespace-nowrap my-auto overflow-auto w-full max-w-full text-center py-20">
 				{cards.map((id) => (
 					<div className="p-6 inline-flex" key={id}>
 						<Card slug={id} />
 					</div>
 				))}
-			</div>
+			</main>
 			<footer className="w-full">
 				<div className="border-line w-full h-24" />
 				<div className="bg w-full h-24" />
